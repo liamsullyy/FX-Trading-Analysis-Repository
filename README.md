@@ -19,6 +19,9 @@ If you are new to running Python projects, follow the step-by-step walkthrough i
 
 The script saves the consolidated dataset to `data/g10_fx_macro_dataset.csv`, exports an OLS regression summary (`data/eurusd_regression_summary.txt`), and writes a diagnostic chart to `plots/eurusd_vs_yield_spread.png`.
 
+> 💡 You do **not** need to execute multiple files—`scripts/fetch_g10_data.py` calls every step of the pipeline. The other
+> tracked files are documentation or generated outputs.
+
 ## Repository contents
 
 - `scripts/fetch_g10_data.py` – pulls historical FX and macro series, engineers features (log returns, yield spreads), and runs an illustrative statsmodels regression.

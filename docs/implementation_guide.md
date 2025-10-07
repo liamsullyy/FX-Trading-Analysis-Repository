@@ -52,6 +52,13 @@ The script automatically downloads the required data, aligns the time series, an
 
 These paths are created if they do not already exist, so no manual folder setup is needed.
 
+### Do I need to run every file in the repository?
+
+No. The repository ships with supporting documentation and helper modules, but the **only** executable you need for the default
+workflow is `scripts/fetch_g10_data.py`. Running that script orchestrates the entire pipeline—pulling data, engineering
+features, saving the dataset, and generating the diagnostic outputs listed above. The other files are reference material
+(`docs/`, `README.md`) or generated artifacts (`data/`, `plots/`).
+
 ## 6. (Optional) Inspect outputs in your IDE
 
 - Use your editor’s CSV viewer to open the dataset and verify column names.
